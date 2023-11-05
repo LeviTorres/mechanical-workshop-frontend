@@ -1,7 +1,20 @@
-
 .btn-primary {
-    background-color: var(--darken-gray-jb);
-    border-radius: 4px;
-    color: var(--white-jb);
-    padding: 5px 10px;
+  background-color: var(--blue-jb);
+  border-radius: 4px;
+  color: var(--white-jb);
+  padding: 5px 10px;
+}
+
+.btn-secondary {
+  background-color: var(--green-jb);
+  border-radius: 4px;
+  color: var(--white-jb);
+  padding: 5px 10px;
+}
+
+.btn-third {
+  background-color: var(--red-jb);
+  border-radius: 4px;
+  color: var(--white-jb);
+  padding: 5px 10px;
 }

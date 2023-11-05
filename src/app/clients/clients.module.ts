@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ClientsRoutingModule } from './clients-routing.module';
 import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
 import { AddClientPageComponent } from './pages/add-client-page/add-client-page.component';
@@ -16,6 +16,14 @@ import { SharedModule } from '../shared/shared.module';
     EditClientPageComponent,
     ClientPageComponent,
   ],
-  imports: [CommonModule, ClientsRoutingModule, SidebarModule, SharedModule],
+  imports: [
+    CommonModule,
+    ClientsRoutingModule,
+    SidebarModule,
+    SharedModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+  ],
+  providers: [provideNgxMask()],
 })
 export class ClientsModule {}

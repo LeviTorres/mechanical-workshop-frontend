@@ -10,6 +10,7 @@
   --orange-jb: #fe5824;
   --green-jb: #06d03f;
   --yellow-jb: #ffbf00;
+  --red-jb: red;
 }
 
 * {
@@ -25,8 +26,10 @@ html {
   font-family: Poppins-Regular, sans-serif;
 }
 
-.container-page{
+.container-page {
+  width: 100%;
   padding: 20px;
+  background-color: var(--almost-white-jb);
 }
 
 @font-face {
@@ -49,9 +52,57 @@ html {
   src: url("./assets/fonts/poppins/Poppins-SemiBold.ttf");
 }
 
-
-
-.active {
-  background-color: var(--blue-jb);
+.form-control {
+  outline: none;
 }
 
+.form-control.error {
+  border: 1px solid var(--red-jb);
+}
+
+.active {
+  background-color: #a6a6a6;
+}
+
+/****************** TABLE *************************/
+
+thead {
+  background-color: var(--lighten-gray-xonox);
+}
+
+tbody {
+  background-color: var(--white-xonox);
+}
+
+tbody tr {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black-xonox);
+  line-height: 21px;
+}
+
+tbody td {
+  vertical-align: middle;
+}
+
+thead tr th {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--darken-gray-xonox);
+  line-height: 21px;
+}
+
+th {
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--black-xonox);
+  line-height: 18px;
+}
+
+th:first-child {
+  border-top-left-radius: 5px;
+}
+
+th:last-child {
+  border-top-right-radius: 5px;
+}

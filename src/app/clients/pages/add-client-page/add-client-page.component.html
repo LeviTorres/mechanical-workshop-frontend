@@ -1,0 +1,41 @@
+<p-toast></p-toast>
+<div class="mb-3">
+    <span class="h2">Nuevo cliente</span>
+</div>
+<form autocomplete="off" [formGroup]="form">
+    <div class="row">
+        <div class="mb-3 col-4">
+            <label class="headline">ID</label>
+            <input formControlName="key_client" class="form-control" type="text" placeholder="Escribe el id del cliente"
+                [ngClass]="{'error': form.controls['key_client'].errors && form.controls['key_client'].touched}" />
+        </div>
+        <div class="mb-3 col-8">
+            <label class="headline">Nombre</label>
+            <input formControlName="name" class="form-control" type="text" placeholder="Escribe el nombre del cliente"
+                [ngClass]="{'error': form.controls['name'].errors && form.controls['name'].touched}" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col-6">
+            <label class="headline">Correo electrónico</label>
+            <input formControlName="email" class="form-control" type="text" placeholder="Escribe el correo electronico"
+                [ngClass]="{'error': form.controls['email'].errors && form.controls['email'].touched}" />
+        </div>
+        <div class="mb-3 col-4">
+            <label class="headline">Teléfono</label>
+            <input formControlName="phone_number" class="form-control" mask="(000) 000-0000" type="text"
+                placeholder="(000) 000-0000"
+                [ngClass]="{'error': form.controls['phone_number'].errors && form.controls['phone_number'].touched}" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col-12">
+            <label class="headline">Dirección</label>
+            <input formControlName="address" class="form-control" type="text" placeholder="Dirección completa" />
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <button class="btn-third me-3" routerLink="/clients">Cancelar</button>
+        <button class="btn-primary" (click)="addClient()">Crear cliente</button>
+    </div>
+</form>

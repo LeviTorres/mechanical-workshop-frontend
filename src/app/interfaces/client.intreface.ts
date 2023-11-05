@@ -5,7 +5,7 @@ export interface Client {
   email: string;
   address: string;
   isActive: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: number;
+  updatedAt: number;
   _id?: string;
 }
