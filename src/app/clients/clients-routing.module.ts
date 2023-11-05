@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
 import { AddClientPageComponent } from './pages/add-client-page/add-client-page.component';
 import { EditClientPageComponent } from './pages/edit-client-page/edit-client-page.component';
+import { ClientPageComponent } from './pages/client-page/client-page.component';
 
 const routes: Routes = [
   {
     path: '',
     component: ClientLayoutComponent,
     children: [
+      { path: '', component: ClientPageComponent },
       { path: 'add', component: AddClientPageComponent },
       { path: 'edit', component: EditClientPageComponent },
     ],

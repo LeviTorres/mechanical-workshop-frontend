@@ -11,22 +11,27 @@ export class SidebarComponent {
     {
       name: 'Dashboard',
       url: '/dashboard',
+      icon: 'bi bi-house-door-fill',
     },
     {
       name: 'Usuarios',
       url: '/users',
+      icon: 'bi bi-people-fill',
     },
     {
       name: 'Clientes',
       url: '/clients',
+      icon: 'bi bi-people-fill',
     },
     {
       name: 'Proveedores',
       url: '/providers',
+      icon: 'bi bi-people-fill',
     },
     {
       name: 'Servicios',
       url: '/jobs',
+      icon: 'bi bi-car-front-fill',
     },
   ];
 

@@ -1,0 +1,7 @@
+
+.btn-primary {
+    background-color: var(--darken-gray-jb);
+    border-radius: 4px;
+    color: var(--white-jb);
+    padding: 5px 10px;
+}
